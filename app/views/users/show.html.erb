@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @user.username %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @user.password %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @user.bio %>
+</p>
+
+<p>
+  <strong>Career:</strong>
+  <%= @user.career %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @user.zipcode %>
+</p>
+
+<p>
+  <strong>Healthcare op:</strong>
+  <%= @user.healthcare_op %>
+</p>
+
+<p>
+  <strong>Gun control op:</strong>
+  <%= @user.gun_control_op %>
+</p>
+
+<p>
+  <strong>Prolife:</strong>
+  <%= @user.prolife %>
+</p>
+
+<p>
+  <strong>Beliefs:</strong>
+  <%= @user.beliefs %>
+</p>
+
+<p>
+  <strong>Political alignment:</strong>
+  <%= @user.political_alignment %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

@@ -1,0 +1,72 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :username %>
+    <%= form.text_field :username, id: :user_username %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, id: :user_email %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.text_field :password, id: :user_password %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bio %>
+    <%= form.text_field :bio, id: :user_bio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :career %>
+    <%= form.text_field :career, id: :user_career %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zipcode %>
+    <%= form.text_field :zipcode, id: :user_zipcode %>
+  </div>
+
+  <div class="field">
+    <%= form.label :healthcare_op %>
+    <%= form.number_field :healthcare_op, id: :user_healthcare_op %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gun_control_op %>
+    <%= form.number_field :gun_control_op, id: :user_gun_control_op %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prolife %>
+    <%= form.check_box :prolife, id: :user_prolife %>
+  </div>
+
+  <div class="field">
+    <%= form.label :beliefs %>
+    <%= form.text_area :beliefs, id: :user_beliefs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :political_alignment %>
+    <%= form.number_field :political_alignment, id: :user_political_alignment %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
