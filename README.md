@@ -1,24 +1,38 @@
-# README
+# Venn
+======
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In a time where discourse creates discord, what can we do? Venn employs machine learning to create the conversations we need.
 
-Things you may want to cover:
+## Features
+--------
 
-* Ruby version
+## Installation
+------------
 
-* System dependencies
+## Contribute
+----------
 
-* Configuration
+* Issue Tracker: https://github.com/jncmaguire/gdp-match/issues
+* Source Code: https://github.com/jncmaguire/gdp-match/
 
-* Database creation
+### Technologies
 
-* Database initialization
+* Ruby (v.?)
+* HTML / CSS / Bootstrap 3, JS, ?
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Support
+-------
 
-* Deployment instructions
+If you're having issues, contact me at jncmaguire@gmail.com
 
-* ...
+
+## License
+-------
+
+The code for this project is licensed under the MIT license.
+
+## Misc
+-------
+
+This template was taken from WriteTheDocs.org: http://www.writethedocs.org/guide/writing/beginners-guide-to-docs/
